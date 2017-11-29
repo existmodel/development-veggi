@@ -8,19 +8,14 @@
 
   font-size: 18px;
   line-height: 20px;
-  color: $primary-color;
   font-weight: bold;
   text-transform: uppercase;
-  border: 2px solid $primary-color;
   cursor: pointer;
 
   &:hover {
-    color: $white;
-    background-color: $primary-color;
   }
 
   &:active {
     opacity: 0.9;
-    color: $greyd3;
   }
 }

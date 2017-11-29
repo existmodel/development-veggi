@@ -8,21 +8,15 @@
   padding-top: 140px;
   font-size: 27px;
   line-height: 30px;
-  background-color: $greyf1;
   margin: 0;
   text-align: center;
   margin-bottom: 30px;
 }
 
-@media (min-width: $tablet-width) {
-  .catalog {
-    width: 768px;
-  }
+
 
   .catalog__title {
     margin-top: -55px;
-
-    @include second-title-tablet;
     padding-top: 95px;
     margin-bottom: 60px;
     position: relative;
@@ -33,22 +27,4 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .catalog {
-    width: 1150px;
-    margin-bottom: 55px;
-  }
 
-  .catalog__content {
-    display: flex;
-    padding-left: 50px;
-  }
-
-  .catalog__title {
-    @include second-title-desktop;
-    margin-bottom: 110px;
-    padding-bottom: 85px;
-    margin-top: -60px;
-    border-bottom: 38px solid;
-  }
-}
