@@ -1,0 +1,28 @@
+.main-nav__list {
+  width: 540px;
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  // line-height: 85px;
+}
+
+.main-nav {
+  // width: 1240px;
+}
+
+.main-nav__link {
+  color: $dark-grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+
+  &:hover {
+    outline: 1px solid $dark-grey;
+  }
+}

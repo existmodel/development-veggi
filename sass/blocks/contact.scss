@@ -1,0 +1,15 @@
+.contact__title {
+  @include title;
+  margin-left: auto;
+}
+
+.contact__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  margin-left: auto;
+}
+
+.contact__adress {
+margin-left: auto;
+}

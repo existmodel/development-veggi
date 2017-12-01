@@ -1,0 +1,40 @@
+.menu {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.js-hide {
+  display: none;
+}
+
+.menu__title {
+  @include title;
+  text-align: center;
+}
+.menu__nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.menu__list {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.menu__link {
+  color: $dark-grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+
+  &:hover {
+    outline: 1px solid $dark-grey;
+  }
+}

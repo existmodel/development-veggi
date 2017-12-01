@@ -1,0 +1,26 @@
+.features {
+  background-color: $gold;
+}
+.features-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.features__items {
+  width: 380px;
+  text-align: center;
+}
+
+.features__name {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.features__text {
+  font-weight: 300;
+}
