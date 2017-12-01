@@ -1,0 +1,17 @@
+.page-footer {
+  height: 100vh;
+  padding-top: 100px;
+  background-color: $light-grey;
+  background-image: url("../img/footer_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: -360px -50px;
+  // background-size: cover;
+}
+
+.page-footer__down {
+  width: 1200px;
+  margin:0 auto;
+  // width: 850px;
+  display: flex;
+  justify-content: flex-end;
+}

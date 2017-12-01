@@ -3,12 +3,17 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+  align-items: flex-end;
   height: 100vh;
 }
 
 .page-header {
   height: 100vh;
+  background-image: url("../img/header_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  background-color: $light-grey;
 }
 
 .page-header__title {
@@ -18,7 +23,7 @@
   // font-size: 40px;
   // font-weight: 300;
   // line-height: 50px;
-  margin-left: auto;
+  // margin-left: auto;
   margin-right: 40px;
   margin-top: calc(50vh - 100px);
 }
