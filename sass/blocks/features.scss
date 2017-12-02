@@ -1,4 +1,6 @@
 .features {
+  background-image: url("../img/gold_bg.jpg");
+  background-repeat: repeat;
   background-color: $gold;
 }
 .features-wrapper {
@@ -6,13 +8,45 @@
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 40px;
 }
 
 .features__items {
   width: 380px;
   text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    background: transparent url("../img/sprite.png") no-repeat;
+    left: 0; 
+    right: 0;
+    top: -120px;
+    background-position: 0px 0px;
+    width: 100px;
+    height: 100px;
+    // bottom: -55px;
+  }
+  &--pot {
+    &::before {
+      background-position: -120px 0px;
+      width: 106px;
+      height: 68px;
+      top: -100px;
+    }
+  }
+
+  &--cake {
+    &::before {
+      background-position: 0px -120px;
+      width: 64px;
+      height: 76px;
+      top: -103px
+    }
+  }
 }
 
 .features__name {

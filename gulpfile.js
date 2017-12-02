@@ -26,6 +26,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var cssmin = require('gulp-cssmin');
 var gulpIf = require('gulp-if');
 var bower = require('gulp-bower');
+var spritesmith = require('gulp.spritesmith');
 
 const isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV == 'development';
 
@@ -188,3 +189,16 @@ gulp.task('watcher', ["scriptsLibs"], function(){
 });
 
 gulp.task('serve', ['watcher', 'browserSync']);
+
+gulp.task('sprite', function() {
+    var spriteData = 
+        gulp.src('img/sprite/*.*') // путь, откуда берем картинки для спрайта
+            .pipe(spritesmith({
+                imgName: 'sprite.png',
+                cssName: 'sprite.css',
+                padding: 20
+            }));
+
+    spriteData.img.pipe(gulp.dest('sprite/img')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('sprite/style')); // путь, куда сохраняем стили
+});

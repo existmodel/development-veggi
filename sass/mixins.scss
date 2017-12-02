@@ -20,3 +20,15 @@
 //   font-size: 53px;
 //   line-height: 57px;
 // }
+
+@mixin decorate {
+  content: "";
+  position: absolute;
+  margin: auto;
+  background: transparent url("../img/decoration.png") no-repeat;
+  width: 253px;
+  height: 33px;
+  left: 0; 
+  right: 0;
+  bottom: -55px;
+}

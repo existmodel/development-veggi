@@ -7,6 +7,11 @@
   text-align: center;
   @include title;
   margin-top: 100px;
+  position: relative;
+
+  &::after {
+    @include decorate;
+  }
 }
 
 .specials__list {

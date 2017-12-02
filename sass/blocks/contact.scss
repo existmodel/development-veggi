@@ -4,6 +4,11 @@
   width: 600px;
   text-align: center;
   margin-bottom: 80px;
+  position: relative;
+
+  &::after {
+    @include decorate;
+  }
 }
 
 .contact {

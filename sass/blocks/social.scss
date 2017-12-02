@@ -1,3 +1,27 @@
 .social {
   @include list-reset;
+  width: 200px;
+  display: flex;
+}
+
+
+.social__link {
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -110px -108px;
+  width: 11px;
+  height: 23px;
+  display: block;
+  border: 1px solid $dark-grey;
+  padding: 24px;
+
+  &--instagram {
+    background-position: -72px -108px;
+    width: 25px;
+    height: 26px;
+    margin-left: 20px;
+  }
+}
+
+.social__item {
+  // border: 1px solid $dark-grey;
 }

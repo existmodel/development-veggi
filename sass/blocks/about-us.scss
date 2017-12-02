@@ -18,6 +18,11 @@
   width: 600px;
   text-align: center;
   margin-bottom: 100px;
+  position: relative;
+
+  &::after {
+    @include decorate;
+  }
 }
 
 .about-us__description {

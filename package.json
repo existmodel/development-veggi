@@ -45,6 +45,9 @@
   ],
   "dependencies": {
     "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp.spritesmith": "^6.7.0",
     "node-gyp": "^3.6.2",
     "node-sass": "^4.7.2"
   }

@@ -12,6 +12,11 @@
 .menu__title {
   @include title;
   text-align: center;
+  position: relative;
+
+  &::after {
+    @include decorate;
+  }
 }
 .menu__nav {
   display: flex;
