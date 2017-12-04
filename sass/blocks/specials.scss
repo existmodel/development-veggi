@@ -27,6 +27,10 @@
   width: 400px;
   text-align: center;
   display: flex;
+  position: relative;
+}
+.specials__item:hover .specials__info {
+  opacity: 1;
 }
 
 .specials__description-wrapper {
@@ -47,4 +51,44 @@
 .specials__price {
   font-size: 18px;
   font-weight: 700;
+}
+
+.specials__info {
+  width: 400px;
+  position: absolute;
+  height: 200px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  // text-align: center;
+  // vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.7s;
+  padding-top: 90px;
+}
+
+.specials__link {
+  color: $dark-grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+  border: none;
+  outline: 1px solid $dark-grey;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    outline: 1px solid $green;
+  }
+  
+}
+
+// HIDDEN
+
+.hidden {
+  display: none;
 }
