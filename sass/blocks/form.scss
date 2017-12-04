@@ -26,12 +26,16 @@
   background-color: transparent;
 
   &:hover {
-  
+    border-bottom: 1px solid $green;
   }
 
   &:focus {
-    opacity: 0.3;
+    border-bottom: 1px solid $light-green;
   }
+}
+
+.form__input::placeholder {
+  color: $primary-color;
 }
 
 .form__input--margin {
@@ -49,9 +53,17 @@
   outline: none;
   background-color: transparent;
 
-  &:focus {
-    opacity: 0.3;
+  &:hover {
+    border-bottom: 1px solid $green;
   }
+
+  &:focus {
+    border-bottom: 1px solid $light-green;
+  }
+}
+
+.form__textarea::placeholder {
+  color: $primary-color;
 }
 
 .form__button {
@@ -64,4 +76,10 @@
   border: none;
   outline: 1px solid $dark-grey;
   margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    outline: 1px solid $green;
+  }
 }

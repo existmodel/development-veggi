@@ -8,6 +8,7 @@
   max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 160px;
   padding-bottom: 40px;
 }
@@ -28,7 +29,6 @@
     background-position: 0px 0px;
     width: 100px;
     height: 100px;
-    // bottom: -55px;
   }
   &--pot {
     &::before {

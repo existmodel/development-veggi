@@ -21,7 +21,7 @@
 .menu__nav {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 90px;
 }
 
@@ -42,5 +42,9 @@
 
   &:hover {
     outline: 1px solid $dark-grey;
+  }
+
+  &:active {
+    outline: 1px solid $green;
   }
 }
