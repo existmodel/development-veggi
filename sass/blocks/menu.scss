@@ -9,6 +9,9 @@
   display: none;
 }
 
+.js-active-btn {
+  outline: 1px solid $dark-grey;
+}
 .menu__title {
   @include title;
   text-align: center;
@@ -42,9 +45,48 @@
 
   &:hover {
     outline: 1px solid $dark-grey;
+    box-shadow: 0 5px 13px 1px #e5e5e5;
   }
 
   &:active {
     outline: 1px solid $green;
   }
+}
+
+.menu__category-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu__category-item {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:30px;
+}
+
+.menu__category-name{
+  text-transform: uppercase;
+  font-size: 18px;
+  // line-height: 50px;
+  font-weight: 300;
+  margin: 0;
+  // flex-grow: 1;
+      width: 470px;
+}
+
+.menu__category-price{
+  font-size: 14px;
+  // line-height: 50px;
+  margin: 0;
+  font-style: italic;
+  // flex-grow: 2;
+}
+
+.menu__category-ingredients {
+  margin: 0;
+  // padding-left: 100px;
+  // flex-grow: 1;
 }

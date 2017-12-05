@@ -13,28 +13,23 @@
       <div class="page-header__wrapper">
         <nav class="main-nav">
           <ul class="main-nav__list">
-<!--             <li class="main-nav__item">
-              <a class="main-nav__link" href="#specials">
-                Home
-              </a>
-            </li> -->
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#specials">
+              <a class="main-nav__link" href="#specials" onclick="slowScroll('#specials')">
                 Specials
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#about-us">
+              <a class="main-nav__link" href="#about-us" onclick="slowScroll('#about-us')">
                 About
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#menu">
+              <a class="main-nav__link" href="#menu" onclick="slowScroll('#menu')">
                 Menu
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#contact">
+              <a class="main-nav__link" href="#contact" onclick="slowScroll('#contact')">
                 Contact
               </a>
             </li>
@@ -97,9 +92,6 @@
 
 
         <div class="specials__item">
-<!--           <div class="specials__info">
-            <a class="specials__link" href="#">Receipt</a>
-          </div> -->
           <img src="img/dish_2.jpg" alt="Celery quandong" class="specials__img">
           <div class="specials__description-wrapper">
             <h3 class="specials__name">Celery quandong</h3>
@@ -118,9 +110,6 @@
           </div>
         </div>
         <div class="specials__item">
-<!--           <div class="specials__info">
-            <a class="specials__link popup" href="#">Receipt</a>
-          </div> -->
           <img src="img/dish_3.jpg" alt="Pea horseradish" class="specials__img">
           <div class="specials__description-wrapper">
             <h3 class="specials__name">Pea horseradish</h3>
@@ -139,9 +128,6 @@
           </div>
         </div>
         <div class="specials__item">
-<!--           <div class="specials__info">
-            <a class="specials__link" href="#">Receipt</a>
-          </div> -->
           <div class="specials__description-wrapper">
             <h3 class="specials__name">Soko radicchio</h3>
             <p class="specials__description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
@@ -161,9 +147,6 @@
           </div>
         </div>
         <div class="specials__item">
-<!--           <div class="specials__info">
-            <a class="specials__link" href="#">Receipt</a>
-          </div> -->
           <div class="specials__description-wrapper">
             <h3 class="specials__name">Tigernut</h3>
             <p class="specials__description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
@@ -183,9 +166,6 @@
           </div>
         </div>
         <div class="specials__item">
-<!--           <div class="specials__info">
-            <a class="specials__link" href="#">Receipt</a>
-          </div> -->
           <div class="specials__description-wrapper">
             <h3 class="specials__name">Yarrow sweet</h3>
             <p class="specials__description">Lorem ipsum dolor sit Pellentesque vel enim a</p>
@@ -217,323 +197,327 @@
       <div class="menu__nav controls">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link js-open-firstList js-active-btn" href="#">
               Starters
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link js-open-secondList" href="#">
               Main Dishes
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link js-open-thirdList" href="#">
               Desserts
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">
+            <a class="menu__link js-open-fourthList" href="#">
               Drinks
             </a>
           </li>
         </ul>
       </div>
-      <div class="starters js-show">
-        <ul class="starters__list">
-          <li class="starters__item">
-            <p class="starters__name">Smoked ricotta terrine</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients">ricotta, shallots, cheddar, capers</p>
+      <div class="menu__category menu__category-one ">
+        <ul class="menu__category-list">
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
-            <p class="starters__price">35$</p>
-            <p class="starters__ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">PAN FRIED COURGETTE FLOWERS</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">Smoked ricotta terrine</p>
-            <p class="starters__price">15$</p>
-            <p class="starters__ingredients">ricotta, shallots, cheddar, capers</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">15$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">Smoked ricotta terrine</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients">ricotta, shallots, cheddar, capers</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">PAN FRIED COURGETTE FLOWERS</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
-            <p class="starters__price">35$</p>
-            <p class="starters__ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">Smoked ricotta terrine</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients">ricotta, shallots, cheddar, capers</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
-            <p class="starters__price">35$</p>
-            <p class="starters__ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">Smoked ricotta terrine</p>
-            <p class="starters__price">5$</p>
-            <p class="starters__ingredients">ricotta, shallots, cheddar, capers</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">5$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">PAN FRIED COURGETTE FLOWERS</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
-            <p class="starters__price">35$</p>
-            <p class="starters__ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">Smoked ricotta terrine</p>
-            <p class="starters__price">10$</p>
-            <p class="starters__ingredients">ricotta, shallots, cheddar, capers</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="starters__item">
-            <p class="starters__name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
-            <p class="starters__price">35$</p>
-            <p class="starters__ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
-          </li>
-        </ul>
-      </div>
-      <div class="main-dishes js-hide">
-        <ul class="main-dishes__list">
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
-          </li>
-          <li class="main-dishes__item">
-            <p class="main-dishes__name">Smoked ricotta terrine</p>
-            <p class="main-dishes__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
         </ul>
       </div>
-      <div class="desserts js-hide">
-        <ul class="desserts__list">
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+
+      <div class="menu__category  menu__category-two js-hide">
+        <ul class="menu__category-list">
+          <li class="menu__category-item">
+            <p class="menu__category-name">Soybean radish artichoke wattle seed</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Spinach avocado daikon</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">15$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">5$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
           </li>
-          <li class="desserts__item">
-            <p class="desserts__name">Smoked ricotta terrine</p>
-            <p class="desserts__price"></p>
-            <p class="ingredients"></p>
-          </li>
-        </ul>
-      </div>
-      <div class="drinks js-hide">
-        <ul class="drinks__list">
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__dish">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
-          </li>
-          <li class="drinks__item">
-            <p class="drinks__name">Smoked ricotta terrine</p>
-            <p class="drinks__price"></p>
-            <p class="drinks__ingredients">sugar</p>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
           </li>
         </ul>
       </div>
+
+      <div class="menu__category  menu__category-three js-hide">
+        <ul class="menu__category-list">
+          <li class="menu__category-item">
+            <p class="menu__category-name">OVERSHAKE</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">hand-spun vanilla, chocolate, caramel, black & white, strawberry or peanut butter</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">OVERSHAKE</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">hand-spun vanilla, chocolate, caramel, black & white, strawberry or peanut butter</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">OVERSHAKE</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">hand-spun vanilla, chocolate, caramel, black & white, strawberry or peanut butter</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">5$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu__category  menu__category-four js-hide">
+        <ul class="menu__category-list">
+          <li class="menu__category-item">
+            <p class="menu__category-name">OVERSHAKE</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">hand-spun vanilla, chocolate, caramel, black & white, strawberry or peanut butter</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">15$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">5$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">PAN FRIED COURGETTE FLOWERS</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients"> courgette flowers, goats cheese, red onion, pine nuts</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">Smoked ricotta terrine</p>
+            <p class="menu__category-price">10$</p>
+            <p class="menu__category-ingredients">ricotta, shallots, cheddar, capers</p>
+          </li>
+          <li class="menu__category-item">
+            <p class="menu__category-name">SAMPHIRE FRITTERS WITH FENNEL CEVICHE</p>
+            <p class="menu__category-price">35$</p>
+            <p class="menu__category-ingredients"> fresh samphire, plain flour, cornflower, eggs, fennel</p>
+          </li>
+        </ul>
+      </div>
+
     </section>
     <footer class="page-footer ">
       <section class="contact" id="contact">
@@ -574,5 +558,14 @@
     </footer>
     <script src="js/libs.min.js" type="text/javascript"></script>
     <script src="js/script.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function slowScroll(id) {
+          var offset = 0;
+          $("html, body").animate ({
+            scrollTop: $(id).offset ().top - offset
+          }, 1000);
+          return false;
+        }
+      </script>
   </body>
 </html>
