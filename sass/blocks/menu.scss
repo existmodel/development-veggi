@@ -90,3 +90,14 @@
   // padding-left: 100px;
   // flex-grow: 1;
 }
+
+@media (max-width: $tablet-width) {
+
+  .menu {
+    width: 768px;
+  }
+
+  .menu__category-list {
+    justify-content: center;
+  }
+}

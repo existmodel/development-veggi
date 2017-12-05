@@ -32,3 +32,10 @@
     @include decorate;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .page-header__wrapper {
+    width: 700px;
+    align-items: center;
+  }
+}

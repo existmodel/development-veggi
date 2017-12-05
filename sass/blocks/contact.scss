@@ -41,3 +41,10 @@
   margin: 0;
   font-size: 16px;
 }
+
+@media (max-width: $tablet-width) {
+
+  .contact {
+    width: 768px;
+  }
+}

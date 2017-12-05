@@ -87,8 +87,23 @@
   
 }
 
+@media (max-width: $tablet-width) {
+  .specials__list {
+
+  }
+}
+
 // HIDDEN
 
 .hidden {
   display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .specials__list {
+    width: 768px;
+  }
+  .specials__item {
+    margin-bottom: 30px;
+  }
 }

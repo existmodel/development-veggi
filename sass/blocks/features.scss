@@ -58,3 +58,16 @@
 .features__text {
   font-weight: 300;
 }
+
+@media (max-width: $tablet-width) {
+  .features-wrapper {
+    width: 768px;
+    justify-content: space-around;
+  }
+
+
+  .features__items {
+    padding-bottom: 100px;
+    width: 210px;
+  }
+}

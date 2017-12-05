@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .page-footer__down {
@@ -14,4 +17,10 @@
   // width: 850px;
   display: flex;
   justify-content: flex-end;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer__down {
+    width: 768px;
+  }
 }
