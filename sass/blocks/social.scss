@@ -26,6 +26,9 @@
   }
 }
 
-.social__item {
-  // border: 1px solid $dark-grey;
+@media (max-width: 650px) {
+  .social {
+    justify-content: center;
+  }
+
 }

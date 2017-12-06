@@ -7,8 +7,8 @@ $(function () {
         $(".popup__content").magnificPopup({type:"inline", midClick: true});
 
         $(".specials__item").each(function (i) {
-          $(this).find("a").attr("href","#receipt_" + i);
-          $(this).find(".receipt").attr("id", "receipt_" + i);
+          $(this).find("a").attr("href","#recipe_" + i);
+          $(this).find(".recipe").attr("id", "recipe_" + i);
         });
 
         // function slowScroll(id) {

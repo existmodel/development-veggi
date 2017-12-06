@@ -23,6 +23,7 @@
   justify-content: space-between;
   width: 600px;
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 .contact__adress-title,
 .contact__communicate-title {
@@ -42,9 +43,38 @@
   font-size: 16px;
 }
 
-@media (max-width: $tablet-width) {
-
-  .contact {
-    width: 768px;
+@media (max-width: 1199px) {
+  .contact  {
+    width: 100%;
   }
+}
+
+@media (max-width: 650px) {
+  .contact__info {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .contact__title {
+    width: 100%;
+    @include title-mobile;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__adress-title,
+.contact__communicate-title {
+  text-align: center;
+}
+
+  .contact__adress {
+    margin-bottom: 30px;
+  }
+
+
 }

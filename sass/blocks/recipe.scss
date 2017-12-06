@@ -1,12 +1,18 @@
-.receipt {
+.recipe {
   background-color: #fff;
   max-width: 600px;
   margin: auto;
   position: relative;
 }
 
-.receipt__title {
+.recipe__title {
   padding-top: 20px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+}
+
+.recipe__text {
+  padding: 30px;
 }

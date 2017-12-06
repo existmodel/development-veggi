@@ -21,10 +21,6 @@
   text-align: center;
   width: 540px;
   @include title;
-  // font-size: 40px;
-  // font-weight: 300;
-  // line-height: 50px;
-  // margin-left: auto;
   margin-right: 40px;
   margin-top: calc(50vh - 100px);
 
@@ -35,7 +31,36 @@
 
 @media (max-width: $tablet-width) {
   .page-header__wrapper {
-    width: 700px;
+    width: 400px;
     align-items: center;
+    height: 100%;
   }
+
+  .page-header__title {
+    width: 100%;
+    margin-right: 0;
+    @include title-mobile;
+    margin-top: 250px;
+  }
+.page-header {
+  background-size: auto;
+  height: 100%;
+  padding-bottom: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-header__wrapper {
+    width: 320px;
+        align-items: flex-end;
+  }
+  
+  .page-header__title {
+    margin-top: 50px;
+  }
+.page-header {
+  padding-bottom: 150px;
+}
+
+
 }

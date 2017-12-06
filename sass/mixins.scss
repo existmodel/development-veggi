@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+@mixin title-mobile {
+  font-size: 30px;
+  line-height: 40px;
+}
+
 @mixin list-reset {
   margin: 0;
   padding: 0;
