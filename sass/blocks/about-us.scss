@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 768px) {
   .about-us__wrapper {
     display: flex;
     flex-direction: column;
@@ -78,12 +78,12 @@
     font-size: 18px;
     line-height: 40px;
 
-      &::after {
-        margin: auto;
-        left: 0;
-        right: 0;
-        bottom: -170px;
-      }
+    &::after {
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: -170px;
+    }
   }
 
   .about-us__wrapper {
@@ -93,7 +93,7 @@
 
   .about-us {
     background-image: url("../img/about_us_bg_mobile.jpg");
-    background-position: center 520px;
+    background-position: center 100%;
     background-size: auto;
   }
 } 

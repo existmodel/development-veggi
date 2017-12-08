@@ -2,7 +2,6 @@
   margin-bottom: 100px;
 }
 
-
 .specials__title {
   text-align: center;
   @include title;
@@ -20,7 +19,7 @@
   margin: 0 auto;
   justify-content: center;
   max-width: 1200px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .specials__item {
@@ -41,6 +40,19 @@
 .specials__name {
   font-size: 18px;
   font-weight: 700;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 100px;
+    height: 1px;
+    left: 0; 
+    right: 0;
+    bottom: -8px;
+    background-color: $black;
+  }
 }
 
 .specials__description {
@@ -84,7 +96,11 @@
   &:hover {
     outline: 1px solid $green;
   }
-  
+}
+
+.specials__caption {
+  text-align: center;
+  margin-top: 80px;
 }
 
 @media (max-width: 460px) {
@@ -104,17 +120,19 @@
     margin-top: 30px;
     @include title-mobile;
   }
+
   .specials__description-wrapper {
     min-height: 200px;
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 768px) {
   .specials__list {
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
   }
+
   .specials__item {
     margin-bottom: 30px;
   }
@@ -122,5 +140,4 @@
   .specials__info {
     width: 100%;
   }
-
 }

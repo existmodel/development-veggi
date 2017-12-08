@@ -30,6 +30,7 @@
     width: 100px;
     height: 100px;
   }
+
   &--pot {
     &::before {
       background-position: -120px 0px;
@@ -87,7 +88,7 @@
   }
 
   .features-wrapper {
-    // width: 320px;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
 }

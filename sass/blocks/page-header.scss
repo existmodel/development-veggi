@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: 768px) {
   .page-header__wrapper {
     width: 400px;
     align-items: center;
@@ -42,25 +42,27 @@
     @include title-mobile;
     margin-top: 250px;
   }
-.page-header {
-  background-size: auto;
-  height: 100%;
-  padding-bottom: 300px;
+
+  .page-header {
+    background-size: auto;
+    height: 100%;
+    padding-bottom: 300px;
+    background-position: 59% 92%;
   }
 }
 
 @media (max-width: 420px) {
   .page-header__wrapper {
     width: 320px;
-        align-items: flex-end;
+    align-items: flex-end;
   }
   
   .page-header__title {
     margin-top: 50px;
   }
-.page-header {
-  padding-bottom: 150px;
-}
 
-
+  .page-header {
+    padding-bottom: 150px;
+    background-position: 48% 0;
+  }
 }

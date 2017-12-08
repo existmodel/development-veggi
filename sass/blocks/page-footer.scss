@@ -14,10 +14,8 @@
 .page-footer__down {
   width: 1200px;
   margin:0 auto;
-  // width: 850px;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -28,21 +26,12 @@
   }
 }
 
-
-@media (max-width: $tablet-width) {
-  .page-footer__down {
-    // width: 768px;
-  }
-}
-
 @media (max-width: 650px) {
   .page-footer {
-    // padding-top: 30px;
     height: 100%;
   }
 
   .page-footer__down {
     justify-content: center;
   }
-
 }

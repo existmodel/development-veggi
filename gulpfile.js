@@ -84,7 +84,8 @@ gulp.task('mincss', function(){
 });
 
 gulp.task('mincssLibs', function(){
-  return gulp.src('css/libs.css')
+  return gulp.src('sass/libs.scss')
+    .pipe(sass())
     .pipe(gulp.dest("css"))
     .pipe(cssmin())
     .pipe(rename({suffix: ".min"}))
@@ -152,7 +153,7 @@ gulp.task("copy", function () {
     "fonts/**/*.woff2",
     "img/**",
     "js/**",
-    "css/libs.min.css"
+    "css/*.min.css"
     ], {
       base: "."
     })
@@ -192,13 +193,13 @@ gulp.task('serve', ['watcher', 'browserSync']);
 
 gulp.task('sprite', function() {
     var spriteData = 
-        gulp.src('img/sprite/*.*') // путь, откуда берем картинки для спрайта
+        gulp.src('img/sprite/*.*')
             .pipe(spritesmith({
                 imgName: 'sprite.png',
                 cssName: 'sprite.css',
                 padding: 20
             }));
 
-    spriteData.img.pipe(gulp.dest('sprite/img')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('sprite/style')); // путь, куда сохраняем стили
+    spriteData.img.pipe(gulp.dest('sprite/img'));
+    spriteData.css.pipe(gulp.dest('sprite/style'));
 });

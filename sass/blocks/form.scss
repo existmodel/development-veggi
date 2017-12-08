@@ -38,6 +38,7 @@
   color: $primary-color;
 }
 
+
 .form__input--margin {
   margin-right: 50px;
 }
@@ -55,7 +56,6 @@
 
   &:hover {
     border-bottom: 1px solid $green;
-    background-color: $light-green
   }
 
   &:focus {
@@ -79,11 +79,14 @@
   margin: auto;
   background-color: transparent;
   cursor: pointer;
+  border-radius: 0;
 
   &:hover {
+    border: 1px solid $green;
+  }
+
+  &:active {
     border: 1px solid $light-green;
-    box-shadow: 0 5px 13px 1px #e5e5e5;
-    background-color: $light-green ; 
   }
 }
 
@@ -93,7 +96,6 @@
     padding-right: 30px;
     padding-left: 30px;
   }
-
 
   .form__input {
     width: 100%;

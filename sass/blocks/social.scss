@@ -2,8 +2,8 @@
   @include list-reset;
   width: 200px;
   display: flex;
+  padding-bottom: 30px;
 }
-
 
 .social__link {
   background: transparent url("../img/sprite.png") no-repeat;
@@ -30,5 +30,4 @@
   .social {
     justify-content: center;
   }
-
 }

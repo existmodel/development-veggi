@@ -4,7 +4,7 @@ $(function () {
 
 
  $(document).ready(function() {
-        $(".popup__content").magnificPopup({type:"inline", midClick: true});
+        $(".js-popup").magnificPopup({type:"inline", midClick: true});
 
         $(".specials__item").each(function (i) {
           $(this).find("a").attr("href","#recipe_" + i);

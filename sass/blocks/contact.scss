@@ -25,6 +25,7 @@
   margin-bottom: 70px;
   flex-wrap: wrap;
 }
+
 .contact__adress-title,
 .contact__communicate-title {
   font-size: 18px;
@@ -36,6 +37,7 @@
 .contact__communicate {
   width: 200px;
 }
+
 .contact__email,
 .contact__phone,
 .contact__text {
@@ -68,13 +70,11 @@
   }
 
   .contact__adress-title,
-.contact__communicate-title {
+  .contact__communicate-title {
   text-align: center;
 }
 
   .contact__adress {
     margin-bottom: 30px;
   }
-
-
 }
